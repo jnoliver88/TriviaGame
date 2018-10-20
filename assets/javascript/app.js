@@ -40,20 +40,23 @@ var correct = 0;
   }
 
 
-  var messages = ["Awesome, You got them all right", "C'mon, I know you can do better", "Really Bruh"]
+  var messages = ["Awesome, You got them all right", "C'mon, I know you can do better", "Really Bruh"];
+  var picture = ["assets/images/willferrell.gif", "assets/images/tellisross.gif", "assets/images/smh.gif"];
+
+
   var range;
-  
-  if (correct < 4){
+  if (correct < 8){
       range = 2;
   }
-  if (correct > 0 && correct < 8) {
+  if (correct > 3 && correct < 6) {
       range = 1;
   }
-  if (correct > 0) {
+  if (correct > 7) {
       range = 0;
   }
   document.getElementById("after_submit").style.visibility = "visible";
 
   document.getElementById("messages").innerHTML = messages[range];
   document.getElementById("number_correct").innerHTML = "You got " + correct + "correct.";
+  document.getElementById("picture").src = picture[range];
 }

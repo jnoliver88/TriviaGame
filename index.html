@@ -4,10 +4,11 @@
 <head>
   <link rel="stylesheet" href="assets/css/style.css">
   <script type="text/javascript" src="assets/javascript/app.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
 </head>
 <body>
-    <h1>Totally Trivial Trivia!</h1>
+    <h1 id="title">Totally Trivial Trivia!</h1>
     <form id="quiz" name="quiz">
     
     <p>"Who was the first president of the United States?"</p>
@@ -15,6 +16,8 @@
     <input type ="radio" id="mc" name="question1" value="George Washington"> Bill Clinton<br>
     <input type ="radio" id="mc" name="question1" value="George Washington"> Lyndon B. Johnson<br>
     <input type ="radio" id="mc" name="question1" value="George Washington"> John F. Kennedy<br>
+   
+    <br>
 
     <p>"The song 'Single Ladies' was sung by which pop artist?"</p>
     <input type="radio" id="mc" name="question2" value="Beyonce">  Ariana Grande<br> 
@@ -22,13 +25,15 @@
     <input type="radio" id="mc" name="question2" value="Beyonce">  Beyonce<br> 
     <input type="radio" id="mc" name="question2" value="Beyonce">  Rhianna<br> 
 
+    <br>
+
     <p>"What is the largest bone in the body?"</p>
     <input type ="radio" id="mc" name="question3" value="Femur"> Skull<br>
     <input type ="radio" id="mc" name="question3" value="Femur"> Femur<br>    
     <input type ="radio" id="mc" name="question3" value="Femur"> Spine<br>    
     <input type ="radio" id="mc" name="question3" value="Femur"> Tibia<br>    
 
-
+    <br>
 
     <p> "Who was the first person to walk on the moon?"</p>
     <input type ="radio" id="mc" name="question4" value="Neil Armstrong"> Alan Bean<br>
@@ -36,12 +41,15 @@
     <input type ="radio" id="mc" name="question4" value="Neil Armstrong"> James Irwn<br>
     <input type ="radio" id="mc" name="question4" value="Neil Armstrong"> Neil Armstrong<br>
 
+    <br>
+
     <p>"What was the name of the lead actor in the 90s tv show 'Martin'?"</p>
     <input type ="radio" id="mc" name="question5" value="Martin"> Cole<br>
     <input type ="radio" id="mc" name="question5" value="Martin"> Tommy <br>
     <input type ="radio" id="mc" name="question5" value="Martin"> Martin<br>
     <input type ="radio" id="mc" name="question5" value="Martin"> Ricky<br>
     
+    <br>
 
     <p>"What year was the first iphone released?"</p>
     <input type ="radio" id="mc" name="question6" value="2007"> 2001<br>
@@ -49,6 +57,7 @@
     <input type ="radio" id="mc" name="question6" value="2007"> 2005<br>
     <input type ="radio" id="mc" name="question6" value="2007"> 2002<br>
     
+    <br>
 
     <p>"Which football is best known for being called 'America's Team?",</p>
     <input type ="radio" id="mc" name="question7" value="Cowboys"> Cowboys<br>
@@ -56,6 +65,7 @@
     <input type ="radio" id="mc" name="question7" value="Cowboys"> Steelers<br>
     <input type ="radio" id="mc" name="question7" value="Cowboys"> Eagles<br>
     
+    <br>
 
     <p>"Which city is the statue of liberty located?"</p>
     <input type ="radio" id="mc" name="question8" value="New York"> Los Angeles<br>
@@ -69,8 +79,9 @@
 
     <div id = "after_submit">
 
-    <p id ="message"></p>
+    <p id ="messages"></p>
     <p id = "number_correct"></p>
+    <img id="picture">
     </div>
 </body>
 </html>
