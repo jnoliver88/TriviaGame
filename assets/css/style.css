@@ -5,13 +5,20 @@
         margin: 0;
         box-sizing: border-box;
 }
+
+body {
+    background-image: url("assets/css/style.css/images/pattern.png");
+}
+
+#form {
+    height: 400px;
+    width: 400px;
+}
 #quiz {
     margin-left: 10px;
     background-color: rgb(205, 133, 50);
-    padding: 10px 20px 10px 20px;
-    width: 800px;
-    border-radius: 20px;
-    float: left;
+    float: center;
+    
 }
 
 #after-submit {
@@ -36,4 +43,10 @@ input {
 #picture {
     width: 475px;
     height: 345px;
+    padding: 10px 20px 10px 20px;
+    float: left;
+}
+
+#title {
+    text-align: center;
 }
